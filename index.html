@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchAdsFast — High Performance Ads That Drive Clicks & Scalable Revenue</title>
+  <meta name="description" content="Fast Ad Launches, one point of contact from strategy to reporting and campaigns built for 100% client satisfaction. Scale your brand with Meta, Google, and TikTok ads." />
+  
+  <!-- Google Fonts: Sora, Plus Jakarta Sans, Manrope, Inter, Instrument Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= 0. NAVBAR ================= -->
+  <header class="navbar-wrapper">
+    <div class="navbar container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="12" fill="#FC7820" />
+            <path d="M7 16V8L16 16H7Z" fill="white" />
+          </svg>
+        </span>
+        <span class="logo-text">LaunchAdsFast<span class="dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About Us</a>
+        <a href="#why-us" class="nav-item">Why Us</a>
+        <a href="#pricing" class="nav-item">Pricing</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-nav open-book-modal">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>Book a Call</span>
+        </button>
+        <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 1. HERO SECTION ================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-container">
+      
+      <!-- Top Trust Pill -->
+      <div class="hero-trust-badge">
+        <span class="pulse-dot"></span>
+        <span>50+ Brands Scaled with High-Converting Ads.</span>
+      </div>
+
+      <!-- Main Headline with Rich Figma Gradient Badges -->
+      <h1 class="hero-title">
+        <div class="title-line">
+          <span class="txt-regular">We</span>
+          <span class="txt-regular">Launch</span>
+          <span class="txt-bold">High</span>
+          <span class="txt-bold">Performance</span>
+          <span class="badge-gradient badge-ads">Ads</span>
+          <span class="txt-black">That</span>
+        </div>
+        <div class="title-line">
+          <span class="txt-black">Drive</span>
+          <span class="badge-gradient badge-clicks">
+            <span class="icon-square">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FC7820" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </span>
+            <span>Clicks,</span>
+          </span>
+          <span class="badge-gradient badge-conversions">
+            <span class="icon-square">
+              <span class="emoji-icon">🎯</span>
+            </span>
+            <span>Conversions,</span>
+          </span>
+        </div>
+        <div class="title-line">
+          <span class="badge-gradient badge-revenue">
+            <span>And Scalable Revenue</span>
+            <span class="emoji-icon">💰</span>
+          </span>
+          <span class="txt-black">Fast</span>
+        </div>
+      </h1>
+
+      <!-- Hero Subtitle -->
+      <p class="hero-subtitle">
+        Fast Ad Launches, one point of contact from strategy to reporting and campaigns built for 100% client satisfaction.
+      </p>
+
+      <!-- Standard Section CTA Pair (Hero uses dark button on left) -->
+      <div class="cta-button-pair">
+        <button class="btn-cta btn-cta-dark open-book-modal">
+          <i class="fa-regular fa-calendar-check cta-icon-left"></i>
+          <span>Book a Call</span>
+          <i class="fa-solid fa-arrow-right cta-icon-right"></i>
+        </button>
+        <button class="btn-cta btn-cta-outline open-contact-modal">
+          <span>Contact Us</span>
+        </button>
+      </div>
+
+      <!-- Social Proof / Reviews Row -->
+      <div class="hero-social-proof">
+        <img src="public/assets/hero_avatars.png" alt="Trusted Clients Avatars" class="hero-avatars-img" />
+        <div class="proof-text">
+          <span>Trusted by <strong>100+ People</strong></span>
+          <span class="divider">|</span>
+          <span class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span>Rated 5/5 based on <strong>100+ Reviews</strong></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 2. CLIENT LOGOS MARQUEE ================= -->
+  <section class="logos-section">
+    <div class="container-fluid">
+      <div class="logos-marquee-wrapper">
+        <div class="logos-marquee-track">
+          <img src="public/assets/brands_marquee.png" alt="Partner Brands: TotalEnergies, Sellsy, Maddyness, Taap.it, JunoJourney, Intermarché" class="brands-marquee-img" />
+          <img src="public/assets/brands_marquee.png" alt="Partner Brands: TotalEnergies, Sellsy, Maddyness, Taap.it, JunoJourney, Intermarché" class="brands-marquee-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 3. ABOUT US ================= -->
+  <section class="about-section" id="about">
+    <div class="container text-center">
+      <div class="section-header-styled">
+        <h2 class="section-title-clean">
+          About Us
+          <span class="wavy-underline">
+            <svg width="150" height="12" viewBox="0 0 150 12" fill="none">
+              <path d="M2 9C35 3 115 1 148 10" stroke="#FC7820" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </span>
+        </h2>
+      </div>
+
+      <div class="about-card-box">
+        <p class="about-content-text">
+          At <strong>LaunchAdsFast.</strong>, we believe great advertising is more than just impressions and clicks — it’s about building brands and driving measurable growth. Our team blends creative storytelling with data-driven strategies to craft campaigns that actually convert. From startups to established businesses, we’ve helped brands scale revenue, reach new audiences, and stay ahead in the fast-changing digital landscape. What sets us apart is our obsession with results, transparent communication, and the speed at which we execute. We don’t just run ads — we become your growth partner."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4. HOW CAN WE HELP YOU? (SERVICES) ================= -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header-styled text-center">
+        <div class="header-emojis-row">
+          <span class="emoji-circle-box">🤝</span>
+          <span class="emoji-circle-box">⚡</span>
+        </div>
+        <h2 class="section-title-clean">How Can We Help You?</h2>
+        <p class="section-subtitle-clean">Performance-driven ad solutions designed to grow your business.</p>
+      </div>
+
+      <div class="services-cards-grid">
+        <!-- Service 1: Meta Ads -->
+        <div class="service-card-item">
+          <div class="service-media-holder">
+            <img src="public/assets/service_meta.png" alt="Meta Ads Platform" class="service-media-img" />
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-heading">Meta Ads</h3>
+            <p class="service-card-copy">
+              With billions of daily users, Meta platforms are where attention lives. We build highly targeted ad campaigns that combine data-driven strategies with scroll-stopping creatives. From brand awareness to conversion-focused funnels, we ensure every dollar spent delivers measurable growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2: Google Ads -->
+        <div class="service-card-item">
+          <div class="service-media-holder">
+            <img src="public/assets/service_google.png" alt="Google Ads Platform" class="service-media-img" />
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-heading">Google Ads</h3>
+            <p class="service-card-copy">
+              When customers are actively searching, you need to show up first. Our Google Ads strategies cover search, display, and YouTube to capture high-intent traffic. With smart bidding, keyword optimization, and clear tracking, we make sure your ads not only get seen but also deliver real, revenue-driving results.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3: TikTok Ads -->
+        <div class="service-card-item">
+          <div class="service-media-holder">
+            <img src="public/assets/service_tiktok.png" alt="TikTok Ads Platform" class="service-media-img" />
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-card-heading">Tiktok Ads</h3>
+            <p class="service-card-copy">
+              TikTok is today’s fastest-growing platform — and we know how to harness it. Our team creates native-style ads that blend seamlessly with the feed, while still driving clicks and conversions. By pairing creative trends with proven performance strategies, we turn TikTok into a powerful growth channel for your brand.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consistent Section CTA Pair -->
+      <div class="cta-button-pair center-align-cta">
+        <button class="btn-cta btn-cta-gradient open-book-modal">
+          <i class="fa-regular fa-calendar-check cta-icon-left"></i>
+          <span>Book a Call</span>
+          <i class="fa-solid fa-arrow-right cta-icon-right"></i>
+        </button>
+        <button class="btn-cta btn-cta-outline open-contact-modal">
+          <span>Contact Us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 5. CAMPAIGNS SHOWCASE ================= -->
+  <section class="campaigns-section" id="campaigns">
+    <div class="container">
+      <div class="section-header-styled text-center">
+        <div class="header-emojis-row">
+          <span class="emoji-circle-box">💲</span>
+          <span class="emoji-circle-box">🥪</span>
+          <span class="emoji-circle-box">📈</span>
+        </div>
+        <h2 class="section-title-clean">Campaigns We’ve Run for Brands Like Yours</h2>
+        <p class="section-subtitle-clean">Real campaigns. Real results. Real impact.</p>
+      </div>
+
+      <div class="campaigns-showcase-container">
+        <div class="campaigns-grid-track" id="campaignTrack">
+          <!-- Card 1 -->
+          <div class="campaign-showcase-card">
+            <img src="public/assets/campaign_1_abstract.png" alt="Creative Ad Visuals" class="campaign-img-full" />
+          </div>
+          <!-- Card 2 -->
+          <div class="campaign-showcase-card">
+            <img src="public/assets/campaign_2_skincare.png" alt="Beauty & Skincare Collection" class="campaign-img-full" />
+          </div>
+          <!-- Card 3 -->
+          <div class="campaign-showcase-card">
+            <img src="public/assets/campaign_3_shoes.png" alt="Footwear & Sneakers" class="campaign-img-full" />
+          </div>
+        </div>
+
+        <!-- Carousel indicator pill in Figma -->
+        <div class="campaign-dots-indicator">
+          <span class="indicator-bar active"></span>
+          <span class="indicator-bar"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 6. RESULTS SPEAK FOR THEMSELVES ================= -->
+  <section class="results-section" id="results">
+    <div class="container text-center">
+      <div class="section-header-styled">
+        <div class="header-emojis-row relative-target-wrapper">
+          <span class="emoji-circle-box">🎯</span>
+          <!-- Decorative curved arrow pointing to target -->
+          <span class="curved-target-arrow">
+            <svg width="60" height="60" viewBox="0 0 100 100" fill="none">
+              <path d="M80 15 C 60 10, 30 30, 45 65" stroke="#1c1c1c" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round" />
+              <polyline points="35,60 45,65 52,55" stroke="#1c1c1c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </div>
+        <h2 class="section-title-clean">
+          Results Speak For Themselves
+          <span class="wavy-underline">
+            <svg width="220" height="12" viewBox="0 0 220 12" fill="none">
+              <path d="M2 9C55 3 165 1 218 10" stroke="#FC7820" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </span>
+        </h2>
+        <p class="section-subtitle-clean">Proof of What Happens When Strategy Meets Execution.</p>
+      </div>
+
+      <!-- 10 Stat Pills matching Figma rows & colors -->
+      <div class="results-badges-grid">
+        <div class="stat-badge badge-coral">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <span>+180% Revenue Growth in 3 Months</span>
+        </div>
+        <div class="stat-badge badge-yellow">
+          <i class="fa-solid fa-sack-dollar"></i>
+          <span>$40K Sales in 60 Days</span>
+        </div>
+        <div class="stat-badge badge-green">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>Every $1 Spent → $10 Earned</span>
+        </div>
+        <div class="stat-badge badge-pink">
+          <i class="fa-solid fa-bullseye"></i>
+          <span>Conversions Increased by 140%</span>
+        </div>
+        <div class="stat-badge badge-mint">
+          <i class="fa-solid fa-users"></i>
+          <span>Website Traffic +200%</span>
+        </div>
+        <div class="stat-badge badge-blue">
+          <i class="fa-solid fa-hand-pointer"></i>
+          <span>CTR Improved by 2.2x</span>
+        </div>
+        <div class="stat-badge badge-purple">
+          <i class="fa-solid fa-percent"></i>
+          <span>CPC Dropped by 30%</span>
+        </div>
+        <div class="stat-badge badge-coral-light">
+          <i class="fa-solid fa-arrow-down"></i>
+          <span>40% Lower Cost Per Lead</span>
+        </div>
+        <div class="stat-badge badge-green-light">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>2000 Leads in 30 days</span>
+        </div>
+        <div class="stat-badge badge-cyan">
+          <i class="fa-solid fa-bolt"></i>
+          <span>9x ROAS Achieved</span>
+        </div>
+      </div>
+
+      <!-- Consistent Section CTA Pair -->
+      <div class="cta-button-pair center-align-cta">
+        <button class="btn-cta btn-cta-gradient open-book-modal">
+          <i class="fa-regular fa-calendar-check cta-icon-left"></i>
+          <span>Book a Call</span>
+          <i class="fa-solid fa-arrow-right cta-icon-right"></i>
+        </button>
+        <button class="btn-cta btn-cta-outline open-contact-modal">
+          <span>Contact Us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 7. WHY WORK WITH US? (COMPARISON) ================= -->
+  <section class="comparison-section" id="why-us">
+    <div class="container">
+      <div class="section-header-styled text-center">
+        <div class="header-emojis-row">
+          <span class="emoji-circle-box">🧐</span>
+        </div>
+        <h2 class="section-title-clean">
+          Why Work With Us?
+          <span class="wavy-underline">
+            <svg width="180" height="12" viewBox="0 0 180 12" fill="none">
+              <path d="M2 9C45 3 135 1 178 10" stroke="#FC7820" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </span>
+        </h2>
+        <p class="section-subtitle-clean">Proof of What Happens When Strategy Meets Execution.</p>
+      </div>
+
+      <div class="comparison-container-layout">
+        <!-- Category Badges Sidebar -->
+        <div class="comparison-categories-sidebar">
+          <button class="comp-badge-tab active" data-index="0">Communication</button>
+          <button class="comp-badge-tab" data-index="1">Strategy</button>
+          <button class="comp-badge-tab" data-index="2">Execution Speed</button>
+          <button class="comp-badge-tab" data-index="3">Metrics</button>
+          <button class="comp-badge-tab" data-index="4">Expertise</button>
+          <button class="comp-badge-tab" data-index="5">Testing</button>
+          <button class="comp-badge-tab" data-index="6">Clarity</button>
+          <button class="comp-badge-tab" data-index="7">Relationship</button>
+        </div>
+
+        <!-- 2 Comparison Cards -->
+        <div class="comparison-cards-row">
+          <!-- Card 1: Other Agencies -->
+          <div class="comparison-card comp-card-other">
+            <div class="comparison-card-top">
+              <span class="card-icon-emoji">🥱</span>
+              <h3 class="comparison-card-title">Other Agencies</h3>
+            </div>
+            <ul class="comparison-list">
+              <li class="comp-item-row negative" data-index="0">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Delayed or Slow Communication</span>
+              </li>
+              <li class="comp-item-row negative" data-index="1">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Outmoded Strategies for Growth</span>
+              </li>
+              <li class="comp-item-row negative" data-index="2">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Slow campaign launches, weeks of delay</span>
+              </li>
+              <li class="comp-item-row negative" data-index="3">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Vanity metrics (likes, impressions)</span>
+              </li>
+              <li class="comp-item-row negative" data-index="4">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Insufficient Industry Research</span>
+              </li>
+              <li class="comp-item-row negative" data-index="5">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Recycled creatives with no testing</span>
+              </li>
+              <li class="comp-item-row negative" data-index="6">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Confusing jargon, lack of clarity</span>
+              </li>
+              <li class="comp-item-row negative" data-index="7">
+                <span class="status-icon"><i class="fa-solid fa-xmark"></i></span>
+                <span>Treat Clients Like Transactions</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: LaunchAdsFast -->
+          <div class="comparison-card comp-card-launchfast">
+            <div class="comparison-card-top">
+              <span class="card-icon-emoji">🚀</span>
+              <h3 class="comparison-card-title">LaunchAdsFast</h3>
+            </div>
+            <ul class="comparison-list">
+              <li class="comp-item-row positive" data-index="0">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Fast, transparent, constant communication</span>
+              </li>
+              <li class="comp-item-row positive" data-index="1">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Tailored strategies aligned with your goals</span>
+              </li>
+              <li class="comp-item-row positive" data-index="2">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Lightning-fast execution, campaigns live in days</span>
+              </li>
+              <li class="comp-item-row positive" data-index="3">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Revenue-first, ROI-driven campaigns</span>
+              </li>
+              <li class="comp-item-row positive" data-index="4">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Industry Specific Expertise</span>
+              </li>
+              <li class="comp-item-row positive" data-index="5">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>High-performing, tested ad creatives</span>
+              </li>
+              <li class="comp-item-row positive" data-index="6">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>Simple, data-driven reports you can act on</span>
+              </li>
+              <li class="comp-item-row positive" data-index="7">
+                <span class="status-icon"><i class="fa-solid fa-check"></i></span>
+                <span>We act as an extension of your team</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 8. TRANSPARENT PRICING ================= -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-header-styled text-center">
+        <div class="header-emojis-row">
+          <span class="emoji-circle-box">$</span>
+        </div>
+        <h2 class="section-title-clean">
+          Transparent Pricing
+          <span class="wavy-underline">
+            <svg width="180" height="12" viewBox="0 0 180 12" fill="none">
+              <path d="M2 9C45 3 135 1 178 10" stroke="#FC7820" stroke-width="4" stroke-linecap="round" />
+            </svg>
+          </span>
+        </h2>
+        <p class="section-subtitle-clean">No hidden fees, no surprises — just clear plans that deliver results.</p>
+      </div>
+
+      <div class="pricing-cards-container">
+        <!-- Tier 1: Launch Plan -->
+        <div class="pricing-tier-card">
+          <div class="pricing-tier-header">
+            <div class="tier-icon-circle">
+              <span>🚀</span>
+            </div>
+            <h3 class="tier-headline">Everything you need to launch fast.</h3>
+            <p class="tier-subtext">Perfect for brands ready to get started right away.</p>
+          </div>
+
+          <div class="tier-features-list">
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Complete ad account setup (Meta, Google, TikTok)</span>
+            </div>
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Advanced funnel building</span>
+            </div>
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Pixel & tracking integration</span>
+            </div>
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Campaign launch within days</span>
+            </div>
+          </div>
+
+          <div class="tier-pricing-bottom">
+            <span class="price-val">$600</span>
+            <span class="price-desc">(one-time first month)</span>
+          </div>
+        </div>
+
+        <!-- Tier 2: Continuous Growth Plan -->
+        <div class="pricing-tier-card featured-tier-highlight">
+          <div class="pricing-tier-header">
+            <div class="tier-icon-circle">
+              <span>🎯</span>
+            </div>
+            <h3 class="tier-headline">Continuous growth, Every Month.</h3>
+            <p class="tier-subtext">Focus on running your business while we scale your ads.</p>
+          </div>
+
+          <div class="tier-features-list">
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Daily campaign monitoring & optimization</span>
+            </div>
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>A/B testing for creatives & targeting</span>
+            </div>
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Weekly performance reports</span>
+            </div>
+            <div class="feature-row">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Strategy adjustments for better ROI</span>
+            </div>
+          </div>
+
+          <div class="tier-pricing-bottom">
+            <span class="price-val">$300</span>
+            <span class="price-desc">(one-time first month)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consistent Section CTA Pair below Pricing -->
+      <div class="cta-button-pair center-align-cta">
+        <button class="btn-cta btn-cta-gradient open-book-modal">
+          <i class="fa-regular fa-calendar-check cta-icon-left"></i>
+          <span>Book a Call</span>
+          <i class="fa-solid fa-arrow-right cta-icon-right"></i>
+        </button>
+        <button class="btn-cta btn-cta-outline open-contact-modal">
+          <span>Contact Us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 9. TESTIMONIALS (DON'T JUST TAKE OUR WORD FOR IT) ================= -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header-styled text-center">
+        <div class="header-emojis-row">
+          <span class="emoji-circle-box">⭐</span>
+        </div>
+        <h2 class="section-title-clean">Don’t Just Take Our Word For It</h2>
+        <p class="section-subtitle-clean">See how we’ve helped brands grow with ads that convert.</p>
+      </div>
+
+      <div class="testimonials-main-layout">
+        <!-- Big Featured Card -->
+        <div class="testimonial-hero-card">
+          <div class="hero-card-left">
+            <img src="public/assets/testimonial_james_miller.png" alt="James Miller" class="featured-client-photo" />
+          </div>
+          <div class="hero-card-right">
+            <p class="featured-quote-paragraph">
+              “LaunchAdsFast transformed our ad performance — in 60 days we saw consistent ROAS improvements and a clear uptick in sales. Communication was fast and every campaign felt tailored to our brand.”
+            </p>
+            <div class="stars-rating-row">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="author-credits-row">
+              <strong>James Miller</strong>, Marketing Director, BrightNest Home
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Secondary Testimonial Cards -->
+        <div class="testimonials-triplet-grid">
+          <!-- Card 1 -->
+          <div class="testimonial-small-card">
+            <p class="small-card-quote">
+              “We were skeptical about paid channels, but the team delivered. Their creatives resonated with our audience and our CAC dropped significantly within the first month.”
+            </p>
+            <div class="small-card-bottom">
+              <div class="stars-rating-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="author-credits-row">
+                <strong>Daniel Thompson</strong>, Founder, PeakFuel Nutrition
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-small-card">
+            <p class="small-card-quote">
+              “I’ve worked with agencies before, but none moved this fast. They launched campaigns in days, and our lead quality skyrocketed.”
+            </p>
+            <div class="small-card-bottom">
+              <div class="stars-rating-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="author-credits-row">
+                <strong>Amanda Johnson</strong>, Head of Growth, NextGen
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-small-card">
+            <p class="small-card-quote">
+              “What stood out was their transparency — no jargon, no excuses, just results. Our cost per lead dropped by nearly 50%.”
+            </p>
+            <div class="small-card-bottom">
+              <div class="stars-rating-row">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="author-credits-row">
+                <strong>Michael Carter</strong>, CEO, SwiftHire Solutions
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consistent Section CTA Pair below Testimonials -->
+      <div class="cta-button-pair center-align-cta">
+        <button class="btn-cta btn-cta-gradient open-book-modal">
+          <i class="fa-regular fa-calendar-check cta-icon-left"></i>
+          <span>Book a Call</span>
+          <i class="fa-solid fa-arrow-right cta-icon-right"></i>
+        </button>
+        <button class="btn-cta btn-cta-outline open-contact-modal">
+          <span>Contact Us</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. FREQUENTLY ASKED QUESTIONS (FAQ) ================= -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-container-box">
+      <div class="section-header-styled text-center">
+        <div class="header-emojis-row">
+          <span class="emoji-circle-box">💬</span>
+        </div>
+        <h2 class="section-title-clean">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-accordion-list" id="faqAccordion">
+        <!-- FAQ 1 -->
+        <div class="faq-row-item active">
+          <button class="faq-row-question">
+            <span>How Fast Can I See Results?</span>
+            <span class="faq-chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-row-answer">
+            <p>
+              Most clients start seeing traction within the first 2–3 weeks after launch. The exact timeline depends on your budget, industry, and offer — but our goal is to generate measurable results as quickly as possible.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-row-item">
+          <button class="faq-row-question">
+            <span>Why Is The First Month $600 And Then $300/Month?</span>
+            <span class="faq-chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-row-answer">
+            <p>
+              The first month covers the complete setup — ad account creation, tracking integration, creative design, and campaign launch. After that, it’s $300/month for ongoing management, optimization, and scaling.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-row-item">
+          <button class="faq-row-question">
+            <span>Do I Need A Big Budget To Work With You?</span>
+            <span class="faq-chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-row-answer">
+            <p>
+              Not at all. We recommend a minimum ad spend of around $500–$1,000/month to start, but we can scale based on your comfort level and business goals.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-row-item">
+          <button class="faq-row-question">
+            <span>Which Platforms Do You Run Ads On?</span>
+            <span class="faq-chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-row-answer">
+            <p>
+              We specialize in Meta Ads (Facebook & Instagram), TikTok Ads, and Google Ads (Search, Display & YouTube). This mix covers brand awareness, engagement, and conversion-focused campaigns.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-row-item">
+          <button class="faq-row-question">
+            <span>How Do I Know If The Ads Are Working?</span>
+            <span class="faq-chevron-icon"><i class="fa-solid fa-chevron-down"></i></span>
+          </button>
+          <div class="faq-row-answer">
+            <p>
+              You’ll receive clear, easy-to-understand performance reports. We focus on ROI-driven metrics — like revenue, ROAS, and conversions — not just vanity numbers like clicks and impressions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11. FOOTER ================= -->
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" class="brand-logo">
+            <span class="logo-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="12" fill="#FC7820" />
+                <path d="M7 16V8L16 16H7Z" fill="white" />
+              </svg>
+            </span>
+            <span class="logo-text">LaunchAdsFast<span class="dot">.</span></span>
+          </a>
+          <p class="footer-tagline">
+            We launch high performance ads that drive clicks, conversions and scalable revenue fast.
+          </p>
+        </div>
+
+        <!-- Page Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-heading">Page</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#services">How We Help You</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Socials -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-heading">Socials</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">© 2025 LaunchAdsFast. All rights reserved.</p>
+        <div class="legal-text-links">
+          <a href="#" id="privacyLink">Privacy & Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS ================= -->
+  <!-- Book a Call Modal -->
+  <div class="modal-backdrop" id="bookCallModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeBookModal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge">⚡ Instant Scheduling</span>
+        <h3>Book Your Discovery Call</h3>
+        <p>Choose a convenient time with our growth strategy team.</p>
+      </div>
+
+      <form id="bookCallForm" class="modal-form">
+        <div class="form-group">
+          <label for="bookName">Your Name</label>
+          <input type="text" id="bookName" placeholder="e.g. Alex Johnson" required />
+        </div>
+
+        <div class="form-group">
+          <label for="bookEmail">Business Email</label>
+          <input type="email" id="bookEmail" placeholder="alex@yourbrand.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="bookWebsite">Brand Website / Store URL</label>
+          <input type="url" id="bookWebsite" placeholder="https://yourbrand.com" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="bookPlatform">Preferred Platform</label>
+            <select id="bookPlatform">
+              <option value="meta">Meta Ads (FB/IG)</option>
+              <option value="google">Google & YouTube Ads</option>
+              <option value="tiktok">TikTok Ads</option>
+              <option value="all">Full Omnichannel Stack</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bookBudget">Monthly Ad Spend</label>
+            <select id="bookBudget">
+              <option value="500-2k">$500 – $2,000 / mo</option>
+              <option value="2k-10k">$2,000 – $10,000 / mo</option>
+              <option value="10k-50k">$10,000 – $50,000 / mo</option>
+              <option value="50k+">$50,000+ / mo</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-cta btn-cta-gradient btn-full-width">
+          <i class="fa-regular fa-calendar-check cta-icon-left"></i>
+          <span>Confirm Call Booking</span>
+          <i class="fa-solid fa-arrow-right cta-icon-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Us Modal -->
+  <div class="modal-backdrop" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close" id="closeContactModal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge">💬 Get in Touch</span>
+        <h3>Send Us a Message</h3>
+        <p>We typically respond in under 2 hours during business hours.</p>
+      </div>
+
+      <form id="contactForm" class="modal-form">
+        <div class="form-group">
+          <label for="contactName">Your Name</label>
+          <input type="text" id="contactName" placeholder="e.g. Sarah Connor" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail">Email Address</label>
+          <input type="email" id="contactEmail" placeholder="sarah@company.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage">How can we help your brand?</label>
+          <textarea id="contactMessage" rows="4" placeholder="Tell us about your brand, current challenges, and goals..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-cta btn-cta-gradient btn-full-width">
+          <span>Send Message</span>
+          <i class="fa-regular fa-paper-plane cta-icon-right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
