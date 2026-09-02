@@ -34,9 +34,24 @@ export default function Footer({ onShowPrivacy }) {
           <div className="footer-links-col">
             <h4 className="footer-col-heading">Socials</h4>
             <ul className="footer-nav-list">
-              <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-x-twitter"></i> Twitter</a></li>
-              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-instagram"></i> Instagram</a></li>
-              <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i> YouTube</a></li>
+              <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                  <img src="/assets/twitter_logo.png" alt="Twitter" className="footer-social-icon-img" />
+                  <span>Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-instagram" style={{ color: '#E1306C' }}></i>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                  <i className="fa-brands fa-youtube" style={{ color: '#FF0000' }}></i>
+                  <span>YouTube</span>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

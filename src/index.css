@@ -1332,6 +1332,13 @@ button {
   text-align: center;
 }
 
+.footer-social-icon-img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
+
 .footer-bottom-bar {
   display: flex;
   align-items: center;
