@@ -114,6 +114,50 @@ button {
 }
 
 /* ==========================================================================
+   BRAND LOGO (MATCHING FIGMA EXACTLY)
+   ========================================================================== */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-badge-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  border: 2.5px solid #ffd1d1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(252, 120, 32, 0.25);
+  flex-shrink: 0;
+}
+
+.logo-letter {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1;
+  margin-top: -1px;
+}
+
+.logo-text {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--color-dark-black);
+  letter-spacing: -0.5px;
+}
+
+.logo-text .dot {
+  color: #fe2c55;
+}
+
+/* ==========================================================================
    UNIFIED BUTTON STYLES (MATCHING FIGMA EXACTLY)
    ========================================================================== */
 
@@ -127,7 +171,7 @@ button {
   color: #ffffff;
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 0.95rem; /* 15px */
+  font-size: 0.95rem;
   height: 48px;
   padding: 0 24px;
   border-radius: var(--radius-full);
@@ -250,24 +294,6 @@ button {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-text {
-  font-family: var(--font-body);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: var(--color-dark);
-  letter-spacing: -0.5px;
-}
-
-.logo-text .dot {
-  color: var(--color-primary-end);
 }
 
 .nav-links {
@@ -540,6 +566,19 @@ button {
   box-shadow: var(--shadow-sm);
 }
 
+.emoji-squircle-box {
+  width: 66px;
+  height: 66px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
 .section-title-clean {
   font-size: 2.5rem; /* 40px */
   font-weight: 800;
@@ -770,7 +809,7 @@ button {
 .badge-yellow { background-color: var(--pill-yellow-bg); border-color: var(--pill-yellow-border); color: #a06b00; }
 .badge-green { background-color: var(--pill-green-bg); border-color: var(--pill-green-border); color: #178a38; }
 .badge-pink { background-color: var(--pill-pink-bg); border-color: var(--pill-pink-border); color: #b51a66; }
-.badge-mint { background-color: var(--pill-mint-bg); border-color: #c9e868; color: #4b6600; }
+.badge-mint { background-color: var(--pill-mint-bg); border-color: var(--pill-mint-bg); color: #4b6600; }
 .badge-blue { background-color: var(--pill-blue-bg); border-color: var(--pill-blue-border); color: #0b63c5; }
 .badge-purple { background-color: var(--pill-purple-bg); border-color: var(--pill-purple-border); color: #7b29a8; }
 .badge-coral-light { background-color: #fff6f6; border-color: #ffd1d1; color: #d13030; }
@@ -862,7 +901,7 @@ button {
 }
 
 .comparison-card-title {
-  font-size: 1.75rem; /* 28px */
+  font-size: 1.75rem;
   font-weight: 800;
 }
 
@@ -911,7 +950,7 @@ button {
 
 /* ==========================================================================
    8. TRANSPARENT PRICING
-   ========================================================================= */
+   ========================================================================== */
 .pricing-section {
   padding: 100px 0;
   background-color: #fbfbfb;
@@ -963,7 +1002,7 @@ button {
 }
 
 .tier-headline {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 8px;
 }
@@ -1003,7 +1042,7 @@ button {
 
 .price-val {
   font-family: var(--font-heading);
-  font-size: 2.25rem; /* 36px */
+  font-size: 2.25rem;
   font-weight: 800;
   color: var(--color-dark);
 }
@@ -1014,104 +1053,134 @@ button {
 }
 
 /* ==========================================================================
-   9. TESTIMONIALS (DON'T JUST TAKE OUR WORD FOR IT)
+   9. TESTIMONIALS (EXACT FIGMA 2-ROW ALIGNMENT & SIZING)
    ========================================================================== */
 .testimonials-section {
   padding: 100px 0;
   background-color: #ffffff;
 }
 
-.testimonials-main-layout {
-  max-width: 1080px;
-  margin: 48px auto 0;
+.testimonials-container {
+  max-width: 1012px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.testimonials-cards-layout {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 12px;
+  width: 100%;
+  margin: 40px auto 0;
 }
 
-/* Featured Big Card */
-.testimonial-hero-card {
+/* Row 1: Left Photo Card + Right Quote Card */
+.testimonial-featured-row {
   display: grid;
-  grid-template-columns: 340px 1fr;
-  border-radius: var(--radius-xl);
-  border: 1px solid var(--color-border);
+  grid-template-columns: 325px 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+.featured-photo-card {
+  width: 100%;
+  height: 328px;
+  border-radius: 20px;
   overflow: hidden;
+  border: 1px solid var(--color-border);
   background-color: #ffffff;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.hero-card-left {
-  height: 100%;
-}
-
-.featured-client-photo {
+.featured-author-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-.hero-card-right {
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.featured-quote-paragraph {
-  font-size: 1.25rem; /* 20px */
-  font-weight: 700;
-  line-height: 1.6;
-  color: var(--color-dark);
-  margin-bottom: 24px;
-}
-
-.stars-rating-row {
-  color: #ff9800;
-  font-size: 1.1rem;
-  display: flex;
-  gap: 4px;
-  margin-bottom: 12px;
-}
-
-.author-credits-row {
-  font-size: 0.95rem;
-  color: var(--color-muted);
-}
-
-.author-credits-row strong {
-  color: var(--color-dark);
-}
-
-/* 3 Secondary Cards */
-.testimonials-triplet-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.testimonial-small-card {
-  padding: 32px 28px;
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-border);
+.featured-quote-card {
   background-color: #ffffff;
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 34px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: var(--transition-smooth);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  height: 328px;
+}
+
+.featured-quote-main {
+  font-family: var(--font-body);
+  font-size: 1.25rem; /* 20px */
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
+.featured-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Row 2: 3 Equal Bottom Cards */
+.testimonials-bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.testimonial-small-card {
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 277px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .testimonial-small-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
 
 .small-card-quote {
+  font-family: var(--font-body);
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.6;
   color: var(--color-body);
-  margin-bottom: 20px;
+}
+
+.small-card-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stars-row {
+  color: #ff9800;
+  font-size: 0.9rem;
+  display: flex;
+  gap: 3px;
+}
+
+.author-meta-text {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.author-meta-text strong {
+  color: var(--color-dark);
+  font-weight: 700;
 }
 
 /* ==========================================================================
@@ -1123,7 +1192,8 @@ button {
 }
 
 .faq-container-box {
-  max-width: 860px;
+  max-width: 1012px;
+  margin: 0 auto;
 }
 
 .faq-accordion-list {
@@ -1412,8 +1482,16 @@ button {
     font-size: 2.75rem;
   }
   .services-cards-grid,
-  .campaigns-grid-track,
-  .testimonials-triplet-grid {
+  .campaigns-grid-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-featured-row {
+    grid-template-columns: 1fr;
+  }
+  .featured-photo-card {
+    height: 280px;
+  }
+  .testimonials-bottom-row {
     grid-template-columns: repeat(2, 1fr);
   }
   .comparison-container-layout {
@@ -1426,12 +1504,6 @@ button {
   }
   .comp-badge-tab {
     white-space: nowrap;
-  }
-  .testimonial-hero-card {
-    grid-template-columns: 1fr;
-  }
-  .hero-card-left {
-    height: 280px;
   }
 }
 
@@ -1484,8 +1556,16 @@ button {
   .campaigns-grid-track,
   .comparison-cards-row,
   .pricing-cards-container,
-  .testimonials-triplet-grid {
+  .testimonials-bottom-row {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-small-card {
+    height: auto;
+  }
+
+  .featured-quote-card {
+    height: auto;
   }
 
   .footer-top-grid {

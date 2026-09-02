@@ -7,12 +7,9 @@ export default function Footer({ onShowPrivacy }) {
         <div className="footer-top-grid">
           {/* Brand Info */}
           <div className="footer-brand-col">
-            <a href="#hero" class="brand-logo">
-              <span className="logo-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="12" fill="#FC7820" />
-                  <path d="M7 16V8L16 16H7Z" fill="white" />
-                </svg>
+            <a href="#hero" className="brand-logo">
+              <span className="logo-badge-circle">
+                <span className="logo-letter">L</span>
               </span>
               <span className="logo-text">LaunchAdsFast<span className="dot">.</span></span>
             </a>
