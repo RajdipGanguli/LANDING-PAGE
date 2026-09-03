@@ -36,7 +36,7 @@ export default function Footer({ onShowPrivacy }) {
             <ul className="footer-nav-list">
               <li>
                 <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                  <img src="/assets/twitter_logo.png" alt="Twitter" className="footer-social-icon-img" />
+                  <img src="/assets/twitter_logo.svg" alt="Twitter" className="footer-social-icon-img" />
                   <span>Twitter</span>
                 </a>
               </li>
